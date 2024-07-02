@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-image: url('imagenes/BANNER.jpg');
+    background-image: url('BANNER.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
