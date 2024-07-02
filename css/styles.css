@@ -20,14 +20,9 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-
 header {
-    background-image: url('/imagenes/BANNER.png');
-    background-size: cover;
-    background-position: center;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,6 +31,13 @@ header {
     position: relative;
     overflow: hidden;
 }
+
+header img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
 
 .galeria {
     display: flex;
