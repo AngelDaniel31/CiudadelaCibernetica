@@ -11,47 +11,48 @@ body {
     background-color: #98c6eb;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    padding-top: 0px;
+    align-items: center; /* Alineación vertical del contenido */
+    justify-content: center; /* Opcional: centrar todo verticalmente */
+    min-height: 100vh; /* Ocupa al menos toda la pantalla */
+    padding-top: 0;
 }
 
 .container {
-    width: auto;
-    max-width: auto;
-    margin: 0 auto;
-    padding: 0px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 1200px; 
+    margin: 0 auto; /* Centrado horizontalmente */
+    padding: 0 1rem; /* Espaciado opcional */
 }
-header {
-    background-color: url("/imagenes/BANNER.png");;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 
+header {
+    position: relative;
+    z-index: 1000;
     color: #fff;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    max-height: auto;
- 
+    height: 50vh; 
+    max-height: 400px; /* Evita que ocupe demasiado en pantallas pequeñas */
+    width: 100%; /* Ocupa todo el ancho */
     overflow: hidden;
 }
 
 header img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     margin-top: 0%;
 }
-
 
 .galeria {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 1200px; 
+    margin: 1rem 0; /* Espaciado opcional */
 }
 
 .servicio {
@@ -60,7 +61,7 @@ header img {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 300px; 
     text-align: center;
     position: relative;
     perspective: 1000px;
@@ -122,7 +123,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    width: 100%;
+    width: 100%; /* Ocupa todo el ancho */
 }
 
 .footer-content {
@@ -145,7 +146,10 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-section p, .footer-section a, .footer-section ul, .footer-section form {
+.footer-section p,
+.footer-section a,
+.footer-section ul,
+.footer-section form {
     margin: 10px 0;
 }
 
@@ -185,8 +189,6 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
-
 
 .footer-section form button {
     padding: 10px 20px;
@@ -248,45 +250,42 @@ a img:hover {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+    header {
+        height: 40vh; /* Reducir altura en dispositivos medianos */
+    }
+
     .servicio {
-        max-width: 90%;
+        max-width: 90%; /* Ajustar tamaño de servicios */
     }
 
     .galeria {
-        flex-direction: column;
+        flex-direction: column; /* Apilar galería en dispositivos medianos */
     }
 
     .presentacion h2 {
-        font-size: 2rem;
+        font-size: 2rem; /* Reducir tamaño de título de presentación */
     }
 
     .presentacion p {
-        font-size: 1rem;
+        font-size: 1rem; /* Reducir tamaño de texto de presentación */
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2rem;
+    header {
+        height: 30vh; /* Reducir altura en dispositivos pequeños */
     }
 
-    nav ul li a {
-        font-size: 0.9rem;
-    }
-
-    #hero h2 {
-        font-size: 1.5rem;
-    }
-
-    .servicio h3 {
-        font-size: 1rem;
+    .servicio {
+        max-width: 100%; /* Ajustar servicios al ancho completo */
+        margin: 0.5rem 0; /* Espaciado entre servicios */
     }
 
     .presentacion h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Reducir tamaño de título de presentación */
     }
 
     .presentacion p {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Reducir tamaño de texto de presentación */
     }
 }
