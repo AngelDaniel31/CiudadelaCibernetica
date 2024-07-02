@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 0px;
 }
 
 .container {
@@ -21,6 +22,11 @@ body {
     padding: 20px;
 }
 header {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
     color: #fff;
     text-align: center;
     display: flex;
@@ -28,7 +34,7 @@ header {
     justify-content: center;
     height: 50vh;
     max-height: auto;
-    position: relative;
+ 
     overflow: hidden;
     margin-top: 0%;
 }
