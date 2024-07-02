@@ -19,7 +19,7 @@ body {
     width: auto;
     max-width: auto;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
 }
 header {
     position: relative;
@@ -36,7 +36,6 @@ header {
     max-height: auto;
  
     overflow: hidden;
-    margin-top: 0%;
 }
 
 header img {
@@ -255,6 +254,14 @@ a img:hover {
     .galeria {
         flex-direction: column;
     }
+
+    .presentacion h2 {
+        font-size: 2rem;
+    }
+
+    .presentacion p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -273,19 +280,7 @@ a img:hover {
     .servicio h3 {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 768px) {
-    .presentacion h2 {
-        font-size: 2rem;
-    }
-
-    .presentacion p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
     .presentacion h2 {
         font-size: 1.5rem;
     }
