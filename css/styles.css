@@ -22,7 +22,7 @@ body {
     width: 100%; /* Ocupa todo el ancho disponible */
     max-width: 1200px; 
     margin: 0 auto; /* Centrado horizontalmente */
-    padding: 0 1rem; /* Espaciado opcional */
+    padding: 0 ; /* Espaciado opcional */
 }
 
 header {
